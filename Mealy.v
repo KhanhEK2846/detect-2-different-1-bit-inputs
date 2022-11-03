@@ -1,9 +1,9 @@
 module Test2(Y,X,Clk,Clr);
 input X,Clk,Clr;
 output reg Y;
-localparam [2:0]
+localparam [1:0]
 s0=0,s1=1,s2=2;
-reg [2:0] State;
+reg [1:0] State;
 
 always@(posedge Clk or posedge Clr)
 if(Clr)
